@@ -1,0 +1,185 @@
+
+/* * means working on body  */
+*{
+    margin: 0px 0px;
+    /* background-color: brown; */
+}
+/* Navigation bar logo */
+
+nav img{
+    margin: 6px 6px;
+    width: 64%;
+}
+
+/* Navigation bar */
+
+#navbar{
+    margin: 0px 0px;
+    position: relative;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(5, 5, 5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul{
+    margin: 0px -56px;
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: -9px -9px;
+    padding: 9px 22px;
+    /* justify-content: center; */
+}
+
+#navbar ul li a{
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0px 10px;
+    padding: 7px 22px;
+    text-decoration: none
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+/* Navigation bar for login  */
+#item{
+    width: 754px;
+    /* background-color: brown; */
+    text-align: right;
+    right: 10px;
+}
+.p-primary{
+    display: flex;
+   padding: 50px 50px;
+}
+
+/* content section css */
+#content{
+    margin: 53px 0px;
+    display: flex;
+    align-items: center;
+    padding: 6px 0px;
+    border: 2px solid black
+}
+
+#contentin{
+    display:inline-block;
+    border: 2px solid black;
+    background-color: chocolate;
+    margin: auto;
+    padding: 100px 100px;
+}
+
+/* Adding bubble animation to the bacck ground */
+
+.bubble img{
+    width: 50px;
+    animation: bubbles 7s linear infinite;
+    z-index: -1;
+}
+
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -450px;
+}
+
+@keyframes bubbles{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+.bubble img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubble img:nth-child(2){
+    animation-delay: 1s;
+    width: 35px;
+}
+.bubble img:nth-child(3){
+    animation-delay: 3s;
+}
+.bubble img:nth-child(4){
+    animation-delay: 2.5s;
+    width: 20px;
+}
+.bubble img:nth-child(5){
+    animation-delay: 7s;
+    width: 25px;
+}
+.bubble img:nth-child(6){
+    animation-delay: 5s;
+}
+.bubble img:nth-child(7){
+    animation-delay: 4s;
+    width: 25px;
+}
+
+/* form in the regitration */
+
+.form {
+    margin: 105px 48px;
+    padding: 41px 2px;
+    width: 30%;
+    border-radius: 24px;
+    border: 2px solid white;
+    background-color: #d3d0d0;
+}
+
+#topic {
+    color: black;
+    text-align: center;
+    margin: -19px 154px;
+
+}
+
+.formgroup {
+    margin: 22px 9px;
+    padding: 13px 19px;
+    color: #0e0d0d;
+}
+
+.buttons {
+    margin: -13px 130px;
+    padding: 11px;
+}
+.btns{
+    border-radius: 5px;
+}
+.btns:hover{
+    background-color: cornsilk;
+    cursor: pointer;
+    
+}

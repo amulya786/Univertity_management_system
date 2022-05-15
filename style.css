@@ -1,0 +1,106 @@
+
+/* * means working on body  */
+*{
+    margin: 0px 0px;
+    /* background-color: brown; */
+}
+/* Navigation bar logo */
+
+nav img{
+    margin: 6px 6px;
+    width: 64%;
+}
+
+/* Navigation bar */
+
+#navbar{
+    margin: 0px 0px;
+    position: relative;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(5, 5, 5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 3;
+}
+
+#navbar ul{
+    margin: 0px -56px;
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: -9px -9px;
+    padding: 9px 22px;
+    /* justify-content: center; */
+}
+
+#navbar ul li a{
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0px 10px;
+    padding: 7px 22px;
+    text-decoration: none
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+}
+
+/* Navigation bar for login  */
+#item{
+    width: 754px;
+    /* background-color: brown; */
+    text-align: right;
+    right: 10px;
+}
+
+
+/* Section part begins form here */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url(../img/pic.jpg) no-repeat center center/cover;
+    height: 44%;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.p-primary{
+    display: flex;
+   padding: 50px 50px;
+}
+
+/* content section css */
+#content{
+    margin: 53px 0px;
+    display: flex;
+    padding: 6px 0px;
+    border: 2px solid black
+}
+
+#contentin{
+    border: 2px solid black;
+    margin: 0px 0px;
+    padding: 100px 100px;
+}
