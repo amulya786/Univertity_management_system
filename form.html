@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University management</title>
+    <link rel="stylesheet" href="css/resigtration.css">
+
+</head>
+
+
+<body style="background-image: url(img/background.png); position: relative; background-repeat: no-repeat;">
+    
+    <nav id="navbar">
+        <div id="nav">
+            <img src="img/logo.png" alt="image_not_load">
+        </div>
+        <ul class="list">
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="#">About us</a></li>
+            <li class="item"><a href="registration.php">Registration</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+            <li id="item"><a href="#">login</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <div class="form">
+            <h2 id="topic">Joining form</h2>
+            <form action="nobackend.php"  method="POST" class="formgroup">
+               
+               
+                Name: <input type="text" id="f1" placeholder="Enter your name" name="username"
+                    style="margin: 4px 39px;border-radius:5px;">
+               
+               
+                    <br> Roll no:<input type="number" id="f2" placeholder="0" name="rollno"
+                    style="margin: -1px 55px;border-radius:5px;width: 100px;">
+               
+               
+                    <br><label for="branch">Branch :</label>
+                <select name="branch" style="margin: 5px 26px; border-radius: 5px;">
+                    <option value="CSE">Computer Science</option>
+                    <option value="IT">Information tecnology</option>
+                    <option value="ECE">Electronics & Comm.</option>
+                </select>
+               
+               
+                <br><label for="genender">Gender:</label>
+                <select name="gen" style="margin: 5px 26px; border-radius: 5px;">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select>
+
+                <br> Moblie No.:<input type="text" id="f3" placeholder="Enter your mob no."
+                    style="margin: 0px 8px;border-radius:5px;" name="mobile">
+                
+                <br> E-mail ID:<input type="email" id="f4" placeholder="Enter your email"
+                    style="margin: 2px 17px;border-radius:5px;width: 200px" name="email">
+                
+                
+                <br> Passoward:<input type="text" id="f5" placeholder="Enter your address"
+                    style="margin: 0px 29px;border-radius:5px;width: 250px" name="pass">
+
+                
+                <br> Confirm Password:<input type="text" id="f5" placeholder="Enter your address"
+                    style="margin: 0px 29px;border-radius:5px;width: 250px" name="cpass">
+
+                
+                <br> <input type="checkbox" style="margin: 10px 10px;">I agree that the given information is filled by
+                me
+                ,and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;its ture
+                
+                <div class="buttons">
+                    <input type="submit" class="btns" name="submit">
+                    <input type="reset" class="btns">
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <section id="contact">
+        <div id="contactus"></div>
+    </section>
+    <div class="bubble">
+        <img src="img/bubble.png" alt="notfound">
+        <img src="img/bubble.png" alt="notfound">
+        <img src="img/bubble.png" alt="notfound">
+        <img src="img/bubble.png" alt="notfound">
+        <img src="img/bubble.png" alt="notfound">
+        <img src="img/bubble.png" alt="notfound">
+        <img src="img/bubble.png" alt="notfound">
+    </div>
+</body>
+
+</html>
